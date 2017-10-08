@@ -1,0 +1,266 @@
+/* Layout */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.eot');
+	src: local('../fonts/Raleway Light'), local('../fonts/Raleway-Light'),
+		url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Light.woff') format('woff'),
+		url('../fonts/Raleway-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Black.eot');
+	src: local('../fonts/Raleway Black'), local('../fonts/Raleway-Black'),
+		url('../fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Black.woff') format('woff'),
+		url('../fonts/Raleway-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.eot');
+	src: local('../fonts/Raleway Bold'), local('../fonts/Raleway-Bold'),
+		url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Bold.woff') format('woff'),
+		url('../fonts/Raleway-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.eot');
+	src: local('../fonts/Raleway'), local('../fonts/Raleway-Regular'),
+		url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Regular.woff') format('woff'),
+		url('../fonts/Raleway-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-SemiBold.eot');
+	src: local('../fonts/Raleway SemiBold'), local('../fonts/Raleway-SemiBold'),
+		url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-SemiBold.woff') format('woff'),
+		url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Medium.eot');
+	src: local('../fonts/Raleway Medium'), local('../fonts/Raleway-Medium'),
+		url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Medium.woff') format('woff'),
+		url('../fonts/Raleway-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-ExtraLight.eot');
+	src: local('../fonts/Raleway ExtraLight'), local('../fonts/Raleway-ExtraLight'),
+		url('../fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ExtraLight.woff') format('woff'),
+		url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-ExtraBold.eot');
+	src: local('../fonts/Raleway ExtraBold'), local('../fonts/Raleway-ExtraBold'),
+		url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+		url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Thin.eot');
+	src: local('../fonts/Raleway Thin'), local('../fonts/Raleway-Thin'),
+		url('../fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Thin.woff') format('woff'),
+		url('../fonts/Raleway-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+body {
+  font-family: Raleway, Arial, sans-serif;
+
+}
+
+.container {
+  width: 1000px;
+  margin: 10px auto;
+  border: 1px solid red;
+}
+
+.row::after,
+.row::before,
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.layout-2-col .column {
+  width: 50%;
+}
+
+.layout-3-col .column {
+  width: 33.33%;
+}
+
+/* Header */
+
+.site-header {
+  background-color: #000;
+}
+
+.site-header .header-logo {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+.header-logo .span-logo {
+  color: #27c7ab;
+  font-weight: bold;
+}
+
+.site-menu {
+  text-align: right;
+}
+
+.site-menu a {
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.site-menu li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.site-menu li:last-child {
+  padding-right: 0;
+}
+
+/* Main site */
+
+.site-main {
+  background-color: #d5d5d5;
+  background: -moz-linear-gradient(top, #ffffff 0%, #feffff 42%, #d5d5d5 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%,#feffff 42%,#d5d5d5 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#feffff 42%,#d5d5d5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d5d5',GradientType=0 );
+
+}
+
+.site-main .container {
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.site-main img {
+  padding-top: 35px;
+  margin-left: -80px;
+  height: 100%;
+}
+
+.site-main .column:nth-child(3) {
+  padding-top: 90px;
+  padding-right: 40px;
+  margin-left: -70px;
+}
+
+.site-main h1 {
+  color: #000;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-main h1>span {
+  color: #27c7ab;
+  font-weight: bold;
+}
+
+.site-main .main-paragraph {
+  color: #000;
+  font-size: 0.9em;
+  margin: 25px 0;
+  line-height: 1.5em;
+}
+
+.site-main a {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-main .button {
+  background-color: #27c7ab;
+  border-radius: 10px;
+  padding-top: 12px;
+  width: 220px;
+  height: 2.4em;
+  display: inline-block;
+}
+
+.site-main .next {
+  color: #27c7ab;
+  font-size: 4em;
+  font-weight: 200;
+  display: block;
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+
+.site-main .previous {
+  color: #27c7ab;
+  font-size: 4em;
+  font-weight: 200;
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
