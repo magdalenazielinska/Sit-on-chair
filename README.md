@@ -1,4 +1,4 @@
-# Sit-on-chair
+# Sit on chair
 A project created during Coders Lab workshops
 
 
