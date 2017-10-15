@@ -404,7 +404,7 @@ body {
   font-weight: 700;
   position: absolute;
   top: 20px;
-  left: 25px;
+  right: 33px;
 }
 
 .price span:nth-of-type(2) {
@@ -442,7 +442,7 @@ body {
 }
 
 .services div:nth-child(2n+2) {
-  color: #9d9d9d;
+  color: #8d8d8d;
   background-color: #f1f1f1;
   padding: 0.5rem;
 }
@@ -466,6 +466,44 @@ body {
   font-size: 0.8rem;
 }
 
+.site-pricelist .column:hover .circle-l {
+  background-color: #27c7ab;
+  border: 2px solid #27c7ab;
+}
+
+.site-pricelist .column:hover .circle-s {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.site-pricelist .column:hover .pricelist {
+  background-color: #27c7ab;
+  border: 2px solid #27c7ab;
+}
+
+.site-pricelist .column:hover .title {
+  color: #fff;
+}
+
+.site-pricelist .column:hover .price {
+  color: #27c7ab;
+  border: 2px solid #27c7ab;
+}
+
+.site-pricelist .column:hover .services div:nth-child(2n+1) {
+  color: #999;
+  background-color: #fff;
+}
+
+.site-pricelist .column:hover .services div:nth-child(2n+2) {
+  color: #999;
+  background-color: #f1f1f1;
+}
+
+.site-pricelist .column:hover .join {
+  color: #27c7ab;
+  background-color: #fff;
+}
 
 /* Contact */
 
