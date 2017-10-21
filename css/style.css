@@ -104,7 +104,7 @@ body {
 .site-menu .dropdown:before {
   content: "";
   width: 0;
-  margin-left: 40px;
+  margin-left: 47px;
   border: 10px solid transparent;
   border-bottom-color: #000;
   position: absolute;
@@ -137,6 +137,7 @@ body {
   text-align: center;
   position: relative;
   padding-bottom: 10px;
+  margin-top: 35px;
 }
 
 .site-slider img {
@@ -224,8 +225,8 @@ body {
   background-color: #fff;
 }
 
-.site-offer .row {
-  margin-top: 15px;
+.site-offer .container {
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
@@ -519,7 +520,7 @@ body {
   background-color: #fff;
 }
 
-.site-contact .row {
+.site-contact .container {
   margin-top: 20px;
   margin-bottom: 40px;
 }
