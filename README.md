@@ -1,7 +1,7 @@
 # Sit on chair
 A project created during Coders Lab workshops
 
-Demo: <a href="https://magdalenazielinska.github.io/Sit-on-chair">Sit on chair</a>
+Demo: [here](https://magdalenazielinska.github.io/Sit-on-chair">Sit on chair)
 
 ## The expected effect:
 
