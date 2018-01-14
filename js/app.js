@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         next.addEventListener('click', function(e) {
             e.preventDefault();
-            list[index].classList.add('hidden');
+            list[index].classList.add('invisible');
             index++;
             if (index >= list.length) {
                 index = 0;
             };
-            list[index].classList.remove('hidden');
+            list[index].classList.remove('invisible');
         });
 
         prev.addEventListener('click', function(e) {
             e.preventDefault();
-            list[index].classList.add('hidden');
+            list[index].classList.add('invisible');
             index--;
             if (index < 0) {
                 index = list.length-1;
             };
-            list[index].classList.remove('hidden');
+            list[index].classList.remove('invisible');
         });
     }
     slider();
@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
         offerImg.forEach(function(element) {
             element.addEventListener('mouseover', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.classList.add('hidden');
+                offerTitle.classList.add('invisible');
             });
 
             element.addEventListener('mouseout', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.classList.remove('hidden');
+                offerTitle.classList.remove('invisible');
             });
         });
     }
