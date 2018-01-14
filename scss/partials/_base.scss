@@ -111,6 +111,11 @@ h2 {
 }
 
 .invisible {
+  display: none;
   opacity: 0;
   @include hover-link;
+}
+
+.hidden {
+  display: none;
 }

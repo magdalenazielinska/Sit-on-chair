@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         next.addEventListener('click', function(e) {
             e.preventDefault();
-            list[index].classList.add('invisible');
+            list[index].classList.add('hidden');
             index++;
             if (index >= list.length) {
                 index = 0;
             };
-            list[index].classList.remove('invisible');
+            list[index].classList.remove('hidden');
         });
 
         prev.addEventListener('click', function(e) {
             e.preventDefault();
-            list[index].classList.add('invisible');
+            list[index].classList.add('hidden');
             index--;
             if (index < 0) {
                 index = list.length-1;
             };
-            list[index].classList.remove('invisible');
+            list[index].classList.remove('hidden');
         });
     }
     slider();
@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
         offerImg.forEach(function(element) {
             element.addEventListener('mouseover', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.classList.add('invisible');
+                offerTitle.classList.add('hidden');
             });
 
             element.addEventListener('mouseout', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.classList.remove('invisible');
+                offerTitle.classList.remove('hidden');
             });
         });
     }
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var orderDropdown = document.querySelectorAll('.order-choice .dropdown');
         arrows.forEach(function(element, index) {
             element.addEventListener('click', function() {
-                orderDropdown[index].classList.toggle('invisible');
+                orderDropdown[index].classList.toggle('hidden');
             });
         });
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for (var i = 0; i < itemsList.length; i++) {
             itemsList[i].addEventListener('click', function() {
-                this.parentElement.classList.add('invisible');
+                this.parentElement.classList.add('hidden');
                 this.parentElement.parentElement.firstElementChild.innerText = this.innerText;
 
                 switch (chairs.innerText) {
