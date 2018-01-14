@@ -36,14 +36,39 @@
     <div class="container">
       <div class="row layout-2-col">
         <a href="#"><span class="previous">&lt;</span></a>
-        <div class="column">
-          <img src="images/black_chair.png" alt="Black chair">
-        </div>
-        <div class="column">
-          <h1>Sit <span>on</span> our <span>chair</span></h1>
-          <p class="slider-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a href="#" class="button">Zobacz więcej</a>
-        </div>
+        <ul>
+            <li>
+                <div class="column">
+                    <img src="images/black_chair.png" alt="Black chair">
+                </div>
+                <div class="column">
+                    <h1>Sit <span>on</span> our <span>chair</span></h1>
+                    <p class="slider-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="button">Zobacz więcej</a>
+                </div>
+            </li>
+            <li>
+                <div class="column">
+                    <img src="images/orange_chair.png" alt="Orange chair">
+                </div>
+                <div class="column">
+                    <h1>Sit <span>on</span> our <span>chair</span> 2</h1>
+                    <p class="slider-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="button">Zobacz więcej</a>
+                </div>
+            </li>
+            <li>
+                <div class="column">
+                    <img src="images/red_chair.png" alt="Red chair">
+                </div>
+                <div class="column">
+                    <h1>Sit <span>on</span> our <span>chair</span> 3</h1>
+                    <p class="slider-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="button">Zobacz więcej</a>
+                </div>
+            </li>
+        </ul>
+
         <a href="#"><span class="next">&gt;</span></a>
       </div>
     </div>
@@ -51,12 +76,12 @@
   <section class="site-offer clearfix">
     <div class="container">
       <div class="row layout-3-col">
-        <div class="column chair-clair">
+        <div class="column chair chair-clair">
           <div class="offer-title">
             <p class="chair-name">Chair <span>Clair</span></p>
           </div>
         </div>
-        <div class="column chair-margarita">
+        <div class="column chair chair-margarita">
           <div class="offer-title">
             <p class="chair-name">Chair <span>Margarita</span></p>
           </div>
@@ -136,6 +161,81 @@
       </div>
     </div>
   </section>
+  <section class="site-order clearfix">
+      <div class="container">
+          <div class="row layout-2-col">
+              <div class="column">
+                  <h2>Skomponuj swoje krzesło</h2>
+              </div>
+
+              <div class="column">
+                  <h2>Podsumowanie</h2>
+              </div>
+          </div>
+          <div class="row layout-3-col">
+              <div class="column">
+                  <div class="order-choice">
+                      <span>Wybierz rodzaj</span>
+                      <div class="arrow"></div>
+                      <ul class="dropdown invisible">
+                          <li>Chair Clair</li>
+                          <li>Chair Margarita</li>
+                          <li>Chair Selena</li>
+                      </ul>
+                  </div>
+                  <div class="order-choice">
+                      <span>Wybierz kolor</span>
+                      <div class="arrow"></div>
+                      <ul class="dropdown invisible">
+                          <li>czerwony</li>
+                          <li>czarny</li>
+                          <li>pomarańczowy</li>
+                      </ul>
+                  </div>
+                  <div class="order-choice">
+                      <span>Wybierz materiał</span>
+                      <div class="arrow"></div>
+                      <ul class="dropdown invisible">
+                          <li>tkanina</li>
+                          <li>skóra</li>
+                      </ul>
+                  </div>
+                  <label class="checkbox">
+                      <input type="checkbox" data-transport="150">
+                      <span class="clearfix"></span>  <p class="transport">Transport</p>
+                  </label>
+              </div>
+              <div class="column">
+                  <img src="images/red_chair2.png" alt="Red chair">
+              </div>
+              <div class="column">
+                  <form>
+                      <div class="order-summary">
+                          <div class="order-summary-features">
+                              <p class="order-chair-name">Twój fotel</p>
+                              <p class="order-chair-add"></p>
+                              <p class="order-chair-add"></p>
+                              <p class="order-chair-add"></p>
+                          </div>
+                          <div class="order-summary-prices">
+                              <p class="order-chair-price order-chair-price-big"></p>
+                              <p class="order-chair-price"></p>
+                              <p class="order-chair-price"></p>
+                              <p class="order-chair-price"></p>
+                          </div>
+                          <div class="order-summary-suma">
+                              <p>SUMA</p>
+                          </div>
+                          <div class="order-summary-total">
+                              <p class="order-chair-price"></p>
+                          </div>
+                      </div>
+                      <input type="submit" value="Zamawiam">
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
   <section class="site-contact clearfix">
     <div class="container">
       <div class="row layout-2-col">
@@ -153,7 +253,7 @@
             </div>
           </div>
           <div class="column">
-            <img src="images/red_chair.png" alt="Red chair">
+            <img src="images/red_chair2.png" alt="Red chair">
             <div class="contact-form">
               <label class="checkbox">
                 <input type="checkbox">

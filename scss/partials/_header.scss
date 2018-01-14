@@ -1,0 +1,79 @@
+/* Header */
+
+.site-header {
+  background-color: $color-black;
+
+  .header-logo {
+    color: $color-white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+
+    span {
+      color: $color-aqua;
+      font-weight: bold;
+    }
+  }
+
+  .site-menu {
+    text-align: right;
+    position: relative;
+
+    a {
+      color: $color-white;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.1rem;
+
+      &:hover {
+        color: $color-aqua;
+        @include hover-link;
+      }
+    }
+
+    > li {
+      display: inline-block;
+      padding-right: 50px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .dropdown {
+      position: absolute;
+      display: none;
+      text-align: left;
+      z-index: 10;
+      padding-top: 22px;
+
+      &:before {
+        content: "";
+        width: 0;
+        margin-left: 43px;
+        border: 10px solid transparent;
+        border-bottom-color: $color-black;
+        position: absolute;
+        top: 2px;
+      }
+
+      > li {
+        background-color: $color-black;
+        display: block;
+        padding: 10px 15px 5px 10px;
+        width: 104px;
+      }
+
+      a {
+        text-transform: none;
+      }
+    }
+  }
+
+}
+

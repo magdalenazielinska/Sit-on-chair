@@ -1,0 +1,185 @@
+/* Pricelist */
+
+.site-pricelist {
+  background-color: $color-lightgray;
+
+  .row {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    .column {
+      margin-right: 25px;
+      width: 282px;
+
+      &:last-child {
+        margin-right: -25px;
+      }
+
+      .pricelist {
+        height: 420px;
+        border: 1px solid $color-pricelist-border;
+        text-align: center;
+        background-color: $color-pricelist-gray1;
+        position: relative;
+
+        .circle-l {
+          border: 1px solid $color-pricelist-border;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          position: relative;
+          top: -25px;
+          left: 116px;
+          background-color: $color-white;
+
+          .circle-s {
+            border: 2px solid $color-pricelist-border;
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+            background-color: $color-pricelist-border;
+            position: relative;
+            top: 11px;
+            left: 12px;
+          }
+        }
+
+        .title {
+          color: $color-aqua;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          position: relative;
+          top: -20px;
+        }
+
+        .price {
+          color: $color-pricelist-border;
+          text-align: center;
+          border: 1px solid $color-pricelist-border;
+          border-radius: 50%;
+          background-color: $color-white;
+          width: 100px;
+          height: 100px;
+          position: relative;
+          left: 91px;
+
+          span:nth-of-type(1) {
+            font-size: 2rem;
+            font-weight: 700;
+            position: absolute;
+            top: 20px;
+            right: 33px;
+          }
+
+          span:nth-of-type(2) {
+            font-size: 0.8rem;
+            font-weight: 700;
+            position: absolute;
+            top: 20px;
+            left: 65px;
+          }
+
+          span:nth-of-type(3) {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            position: absolute;
+            top: 60px;
+            left: 18px;
+          }
+        }
+
+        .services {
+          position: relative;
+          top: 25px;
+
+          div {
+            width: 100%;
+            height: 2em;
+            font-size: 1.2rem;
+
+            &:nth-child(2n+1) {
+              color: $color-pricelist-gray3;
+              background-color: $color-pricelist-gray2;
+              padding: 0.5rem;
+            }
+
+            &:nth-child(2n+2) {
+              color: $color-pricelist-gray4;
+              background-color: $color-pricelist-gray5;
+              padding: 0.5rem;
+            }
+          }
+        }
+
+        .join {
+          @include buttons;
+          width: 110px;
+          height: 1.8rem;
+          position: absolute;
+          bottom: 15px;
+          left: 86px;
+          padding: 7px;
+          display: inline-block;
+          color: $color-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
+      }
+
+      &:hover {
+
+        .pricelist {
+          background-color: $color-aqua;
+          border: 2px solid $color-aqua;
+          @include hover-link;
+
+          .circle-l {
+            background-color: $color-aqua;
+            border: 2px solid $color-aqua;
+            @include hover-link;
+
+            .circle-s {
+              background-color: $color-white;
+              border: 2px solid $color-white;
+              @include hover-link;
+            }
+          }
+
+          .title {
+            color: $color-white;
+            @include hover-link;
+          }
+
+          .price {
+            color: $color-aqua;
+            border: 2px solid $color-aqua;
+            @include hover-link;
+          }
+
+          .services {
+
+            div:nth-child(2n+1) {
+              color: $color-pricelist-gray3;
+              background-color: $color-white;
+              @include hover-link;
+            }
+
+            div:nth-child(2n+2) {
+              color: $color-pricelist-gray3;
+              background-color: $color-pricelist-gray5;
+              @include hover-link;
+            }
+          }
+
+          .join {
+            color: $color-aqua;
+            background-color: $color-white;
+            @include hover-link;
+          }
+        }
+      }
+    }
+  }
+}

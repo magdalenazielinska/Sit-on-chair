@@ -1,0 +1,40 @@
+/* Contact */
+
+.site-contact {
+  background-color: $color-white;
+
+  .container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .column {
+
+      &:first-of-type {
+        width: 60%;
+      }
+
+      &:last-of-type {
+        width: 40%;
+        padding-left: 80px;
+      }
+
+      @include formplaceholder;
+
+      input {
+        @include inputs;
+      }
+
+      textarea {
+        @include inputs;
+        resize: none;
+        height: 10rem;
+      }
+
+      img {
+        @include redchair;
+        margin-top: -18px;
+        padding-left: 15px;
+      }
+    }
+  }
+}

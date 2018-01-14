@@ -1,0 +1,89 @@
+/* Slider */
+
+.site-slider {
+  background-color: $color-slider;
+  @include slider-gradient;
+
+  .container {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 35px;
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: none;
+    }
+
+    .visible {
+      display: inline-block;
+    }
+
+    img {
+      padding-top: 35px;
+      margin-left: -80px;
+      height: 100%;
+      max-width: 470px;
+    }
+
+    .column:nth-child(2) {
+      padding-top: 90px;
+      padding-right: 40px;
+      margin-left: -70px;
+    }
+
+    .slider-paragraph {
+      color: $color-black;
+      font-size: 0.9rem;
+      margin: 25px 0;
+      line-height: 1.5rem;
+    }
+
+    a {
+      color: $color-white;
+      font-size: 1.3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .button {
+      @include buttons;
+      padding-top: 12px;
+      width: 220px;
+      height: 3rem;
+      display: inline-block;
+
+      &:hover {
+        @include buttonhover;
+      }
+    }
+
+    %sliderarrows {
+      color: $color-aqua;
+      font-size: 3.5rem;
+      font-weight: 400;
+      display: block;
+      position: absolute;
+      top: 140px;
+
+      &:hover {
+        @include hover-link;
+        color: $color-aqualight;
+      }
+    }
+
+    .next {
+      @extend %sliderarrows;
+      right: 0;
+    }
+
+    .previous {
+      @extend %sliderarrows;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/* Offer */
+
+.site-offer {
+  background-color: $color-white;
+
+  .container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .column {
+      margin-right: 25px;
+      width: 282px;
+
+      &:last-child {
+        margin-right: -25px;
+      }
+    }
+
+    .chair {
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      height: 225px;
+      position: relative;
+
+      .offer-title {
+        color: $color-black;
+        font-weight: 600;
+        background-color: $color-offer-title;
+        height: 50px;
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        width: 100%;
+
+        .chair-name {
+          font-size: 0.9rem;
+          line-height: 1.3rem;
+          width: 45%;
+          border-bottom: 6px solid $color-aqua;
+          margin-top: 10px;
+          margin-left: 10px;
+
+          span {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .chair-clair {
+      background-image: url("../images/box1_img.jpg");
+    }
+
+    .chair-margarita {
+      background-image: url("../images/box2_img.jpg");
+    }
+
+    .chair-description {
+      border: 1px solid $color-mediumgray;
+      padding: 25px 20px;
+      height: 225px;
+
+      .description-title {
+        color: $color-black;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.3rem;
+        width: 60%;
+        border-bottom: 6px solid $color-aqua;
+      }
+
+      .text {
+        color: $color-h2;
+        font-size: 0.8rem;
+        padding-top: 15px;
+      }
+    }
+  }
+}

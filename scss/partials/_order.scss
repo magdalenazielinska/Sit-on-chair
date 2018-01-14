@@ -1,0 +1,141 @@
+/* Order options */
+
+.site-order {
+  background-color: $color-order;
+
+  .container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .layout-2-col .column:last-of-type {
+      text-align: right;
+    }
+
+    .column {
+
+      h2 {
+        display: inline-block;
+        width: 280px;
+      }
+
+      .order-choice {
+        color: $color-placeholder;
+        font-size: 1.2rem;
+        background-color: $color-white;
+        border: 1px solid $color-aqualight;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        position: relative;
+
+        .arrow {
+          display: inline-block;
+          border: 10px solid transparent;
+          border-top-color: $color-aqualight;
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          cursor: pointer;
+        }
+
+        .dropdown {
+          position: absolute;
+          text-align: left;
+          z-index: 10;
+          margin-top: 12px;
+          margin-left: -13px;
+          list-style: none;
+          background-color: $color-white;
+          width: 100.5%;
+          border: 1px solid $color-aqualight;
+          border-top: 1px solid $color-placeholder;
+          padding: 12px;
+
+          li {
+            color: $color-h2;
+            font-size: 0.9em;
+            cursor: pointer;
+            margin-top: 5px;
+
+            &:hover {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .checkbox {
+        margin: 0;
+        font-size: 1.2rem;
+
+        span {
+          background-color: $color-white;
+        }
+
+        .transport {
+          display: inline-block;
+          padding-top: 10px;
+        }
+      }
+
+      img {
+        @include redchair;
+        margin-left: 40px;
+      }
+
+      .order-summary {
+        background-color: $color-white;
+        color: $color-h2;
+        padding: 5px 10px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        .order-summary-features {
+          width: 60%;
+          border-right: 1px solid $color-placeholder;
+          border-bottom: 1px solid $color-placeholder;
+          min-height: 120px;
+
+          .order-chair-name {
+            color: $color-aqua;
+            font-weight: 600;
+            font-size: 1.2em;
+          }
+        }
+
+        .order-summary-prices {
+          width: 40%;
+          border-bottom: 1px solid $color-placeholder;
+          min-height: 120px;
+        }
+
+        .order-summary-suma {
+          width: 60%;
+          margin-top: 15px;
+          min-height: 29px;
+        }
+
+        .order-summary-total {
+          width: 40%;
+          margin-top: 15px;
+          min-height: 29px;
+        }
+
+        .order-chair-price {
+          color: $color-aqua;
+          font-weight: 600;
+          text-align: right;
+        }
+
+        .order-chair-price-big {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
