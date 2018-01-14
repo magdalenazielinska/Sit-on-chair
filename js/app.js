@@ -23,27 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
     function slider() {
         var next = document.querySelector('.site-slider .next');
         var prev = document.querySelector('.site-slider .previous');
-        var list = document.querySelectorAll('.site-slider li');
+        var list = document.querySelectorAll('.site-slider .slider-item');
         var index = 0;
 
-        list[index].classList.add('visible');
-
-        next.addEventListener('click', function() {
-            list[index].classList.remove('visible');
+        next.addEventListener('click', function(e) {
+            e.preventDefault();
+            list[index].classList.add('invisible');
             index++;
             if (index >= list.length) {
                 index = 0;
             };
-            list[index].classList.add('visible');
+            list[index].classList.remove('invisible');
         });
 
-        prev.addEventListener('click', function() {
-            list[index].classList.remove('visible');
+        prev.addEventListener('click', function(e) {
+            e.preventDefault();
+            list[index].classList.add('invisible');
             index--;
             if (index < 0) {
                 index = list.length-1;
             };
-            list[index].classList.add('visible');
+            list[index].classList.remove('invisible');
         });
     }
     slider();
@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
         offerImg.forEach(function(element) {
             element.addEventListener('mouseover', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.style.display = 'none';
+                offerTitle.classList.add('invisible');
             });
 
             element.addEventListener('mouseout', function() {
                 var offerTitle = this.querySelector('.offer-title');
-                offerTitle.style.display = 'block';
+                offerTitle.classList.remove('invisible');
             });
         });
     }

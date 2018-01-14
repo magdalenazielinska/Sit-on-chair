@@ -32,6 +32,7 @@
         bottom: 45px;
         left: 0;
         width: 100%;
+        @include hover-link;
 
         .chair-name {
           font-size: 0.9rem;
