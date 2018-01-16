@@ -9,9 +9,7 @@ A project created during Coders Lab workshops to present my progress in learning
 
 - [x] HTML5
 - [x] CSS3 / Sass
-- [ ] RWD
-- [ ] Bootstrap
-- [ ] JavaScript
+- [X] JavaScript
 
 ## The expected effect:
 
